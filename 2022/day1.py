@@ -8,7 +8,8 @@ load_dotenv()
 if __name__ == "__main__":
     session_id = os.getenv("SESSION_ID")
     data = get_data(day=1, year=2022, session=session_id)
-    
+    data = data.split("\n")
+
     # Challenge 1
     sum_max = 0
     sum_buffer = 0
@@ -27,9 +28,9 @@ if __name__ == "__main__":
             sum_max = sum_buffer
 
     print(sum_max)
-    
+
     # Challenge 2
-    sum_max = [0, 0 ,0]
+    sum_max = [0, 0, 0]
     sum_buffer = 0
 
     for val in data:
