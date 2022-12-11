@@ -13,7 +13,7 @@ if __name__ == "__main__":
     shape2score = {"rock": 1, "papper": 2, "scissors": 3}
     opponent_encoding = {"A": "rock", "B": "papper", "C": "scissors"}
 
-    # Challenge 1
+    # Part 1: What is the Rock Paper Scissors score following the strategy guide?
     my_encoding = {"X": "rock", "Y": "papper", "Z": "scissors"}
     total_score = 0
 
@@ -40,7 +40,7 @@ if __name__ == "__main__":
 
     print(total_score)
 
-    # Challenge 2
+    # Part 2: What is the Rock Paper Scissors score following the new strategy?
     my_encoding = {"X": "lose", "Y": "draw", "Z": "win"}
     goal2score = {"lose": 0, "draw": 3, "win": 6}
     total_score = 0

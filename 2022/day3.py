@@ -16,7 +16,8 @@ if __name__ == "__main__":
         **{chr(i): p + 27 for p, i in enumerate(range(ord("A"), ord("Z") + 1))},
     }
 
-    # Part 1
+    # Part 1: Find the common items between the 2 compartments for each rucksack.
+    # What is the sum of the priorities of those items?
     priority_sum = 0
     for rucksack in data:
         n = len(rucksack)
@@ -34,7 +35,8 @@ if __name__ == "__main__":
 
     print(priority_sum)
 
-    # Part 2
+    # Part 2: Find the unique item that corresponds to the badges of each three-Elf group.
+    # What is the sum of the priorities of those item?
     priority_sum = 0
     for group_id in range(len(data) // 3):
         first_rucksack = set(data[group_id * 3])

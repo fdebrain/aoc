@@ -10,7 +10,7 @@ if __name__ == "__main__":
     data = get_data(day=1, year=2022, session=session_id)
     data = data.split("\n")
 
-    # Challenge 1
+    # Part 1: Find the Elf carrying the most Calories. How much is he/she carrying?
     sum_max = 0
     sum_buffer = 0
 
@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     print(sum_max)
 
-    # Challenge 2
+    # Part 2: Find the 3 Elves carrying the most Calories. How much do they carry in total?
     sum_max = [0, 0, 0]
     sum_buffer = 0
 
